@@ -1,0 +1,91 @@
+<div
+  class="bg-gradient-to-r from-[#fff5d9] to-[#ff94d7] text-black font-sans flex flex-col items-center md:py-36 py-24 md:space-y-12 space-y-8"
+>
+  <p class="text-5xl">Sound good? Let's talk.</p>
+  <p class="text-lg w-1/2">
+    If this sounds like the kind of recruiting partner you’ve been looking for,
+    we’d love to hear from you. Just fill out the form below, and one of our
+    recruiters will get in touch with you promptly to learn more about your
+    hiring needs.
+  </p>
+  <form
+    class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md space-y-6"
+    [formGroup]="contactForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <h2 class="text-2xl font-bold text-gray-800">Contact Form</h2>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700">First Name</label>
+      <input
+        type="text"
+        formControlName="firstName"
+        required
+        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Last Name</label>
+      <input
+        type="text"
+        formControlName="lastName"
+        required
+        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Email</label>
+      <input
+        type="email"
+        formControlName="email"
+        required
+        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+      />
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700">
+        Phone Number <span class="text-gray-400 text-sm">(Optional)</span>
+      </label>
+      <input
+        type="tel"
+        formControlName="phone"
+        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+      />
+    </div>
+
+    <fieldset>
+      <legend class="block text-sm font-medium text-gray-700 mb-2">
+        You are...
+      </legend>
+      <div class="space-y-2">
+        <label class="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            formControlName="jobSeeker"
+            class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          <span>I am a job seeker</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input
+            type="checkbox"
+            formControlName="employer"
+            class="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+          />
+          <span>I'm an employer looking for talent</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <button
+      type="submit"
+      class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
