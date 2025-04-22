@@ -40,8 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-# Ignore all PNG and JPG files everywhere
-*.png
-*.jpg
-*.jpeg
