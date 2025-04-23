@@ -1,0 +1,65 @@
+<!-- <div
+  class="bg-white text-black font-sans px-4 py-8 rounded-3xl shadow-xl justify-center flex flex-col items-center space-y-4"
+>
+  <p class="text-2xl font-light">Contact Us</p>
+  <input
+    type="text"
+    placeholder="First Name"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    type="text"
+    placeholder="Last Name"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    type="email"
+    placeholder="Email"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    type="phone"
+    placeholder="Phone Number"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <button
+    class="bg-[#FF94D7] text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex items-center space-x-2"
+  >
+    <p>SUBMIT</p>
+    <mat-icon>send</mat-icon>
+  </button>
+</div> -->
+
+<form
+  class="bg-white text-black font-sans px-4 py-8 rounded-3xl shadow-xl justify-center flex flex-col items-center space-y-4"
+  [formGroup]="form"
+>
+  <input
+    id="first-name"
+    placeholder="First Name"
+    type="text"
+    formControlName="firstName"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    id="last-name"
+    placeholder="Last Name"
+    type="text"
+    formControlName="lastName"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    id="email"
+    placeholder="Email"
+    type="text"
+    formControlName="email"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+  <input
+    id="phone"
+    placeholder="Phone Number"
+    type="text"
+    formControlName="phone"
+    class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
+  />
+</form>
