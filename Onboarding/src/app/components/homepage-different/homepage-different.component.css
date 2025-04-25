@@ -9,7 +9,7 @@
 
 .background-container {
     width: 100%;
-    background-image: url("/logos_background_v2.jpg");
+    background-image: url("logos_background_v2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
