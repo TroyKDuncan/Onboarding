@@ -1,5 +1,6 @@
 <div
   class="bg-white text-black font-sans px-16 py-12 rounded-3xl shadow-lg shadow-gray-500 justify-center flex flex-col items-center space-y-4"
+  *ngIf="!submitted()"
 >
   <p class="pb-3 text-3xl font-light">Contact Form</p>
   <input
@@ -26,18 +27,31 @@
     placeholder="Phone Number"
     class="border-2 border-gray-300 rounded-full py-2 px-4 w-full mb-4 focus:border-[#FF94D7] focus:outline-none"
   />
+  <p *ngIf="errorMessage()" class="text-red-500 font-medium">
+    {{ errorMessage() }}
+  </p>
   <button
     (click)="submitForm()"
-    [disabled]="!firstName() || !lastName() || !email()"
-    [ngClass]="{
-      'bg-gray-300 text-gray-500 cursor-not-allowed':
-        !firstName() || !lastName() || !email(),
-      'bg-[#FF94D7] text-black hover:bg-[#fe6ec9] hover:cursor-pointer':
-        firstName() && lastName() && email()
-    }"
-    class="rounded-full px-4 py-2 flex items-center space-x-2 transition-colors duration-200"
+    class="rounded-full px-4 py-2 flex items-center space-x-2 transition-colors duration-200 bg-[#FF94D7] text-black hover:bg-[#fe6ec9] hover:cursor-pointer"
   >
     <p>SUBMIT</p>
     <mat-icon>send</mat-icon>
+  </button>
+</div>
+
+<div
+  *ngIf="submitted()"
+  class="flex flex-col items-center space-y-4 bg-white text-black font-sans px-16 py-12 rounded-3xl shadow-lg shadow-gray-500"
+>
+  <p class="text-3xl font-light">Thank you for your submission!</p>
+  <p class="text-lg">
+    We appreciate your interest and will get back to you shortly.
+  </p>
+  <button
+    (click)="resetForm()"
+    class="bg-[#FF94D7] text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex items-center space-x-2"
+  >
+    <mat-icon>refresh</mat-icon>
+    <p>RESET FORM</p>
   </button>
 </div>
