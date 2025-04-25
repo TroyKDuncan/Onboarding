@@ -7,30 +7,29 @@
   background-repeat: no-repeat;
 } */
 
-.background-container {
-    width: 100%;
-    background-image: url("logos_background_v2.jpg");
-    background-size: cover;
+/* .background-different {
+  width: 100%;
+  background-image: url("assets/logos_background_v2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* Small screens */
+@media (max-width: 640px) {
+  .background-container {
+    height: 150vh;
+    background-position: top;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) {
+  .background-container {
+    height: auto;
     background-position: center;
-    background-repeat: no-repeat;
   }
-  
-  /* Small screens */
-  @media (max-width: 640px) {
-    .background-container {
-      height: 150vh;
-      background-position: top;
-    }
-  }
-  
-  /* Medium screens */
-  @media (min-width: 641px) {
-    .background-container {
-      height: auto;
-      background-position: center;
-    }
-  }
-  
+}
 
 .gradient-text {
   background: linear-gradient(
@@ -41,6 +40,5 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 /* nora */
