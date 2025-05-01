@@ -131,7 +131,7 @@ export class FormComponent {
 
     this.errorMessage.set('');
 
-    fetch('http://localhost:3000/api/notify', {
+    fetch('https://onboarding-backend-zl9a.onrender.com/api/notify', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
