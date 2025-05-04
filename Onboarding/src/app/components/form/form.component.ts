@@ -57,50 +57,6 @@ export class FormComponent {
     );
   };
 
-  //   submitForm = () => {
-  //     const fname = this.firstName().trim();
-  //     const lname = this.lastName().trim();
-  //     const email = this.email().trim();
-  //     const phone = this.phone().trim();
-
-  //     if (!fname || !lname || !email || !phone) {
-  //       this.errorMessage.set('Please fill out all fields.');
-  //       return;
-  //     }
-
-  //     if (!this.isValidEmail(email) && !this.isValidPhone(phone)) {
-  //       this.errorMessage.set('Please enter a valid email address and phone number.');
-  //       return;
-  //     }
-
-  //     if (!this.isValidEmail(email)) {
-  //       this.errorMessage.set('Please enter a valid email address.');
-  //       return;
-  //     }
-
-  //     if (!this.isValidPhone(phone)) {
-  //       this.errorMessage.set('Please enter a valid phone number.');
-  //       return;
-  //     }
-
-  //     // Clear error and proceed
-  //     this.errorMessage.set('');
-
-  //     fetch('https://ntfy.sh/onboarding_forms', {
-  //       method: 'POST',
-  //       body: `
-  // Name: ${fname} ${lname}
-  // Email: ${email}
-  // Phone: ${phone}`,
-  //       headers: {
-  //         Title: 'ONBOARDING FORM SUBMISSION',
-  //         Priority: 'urgent',
-  //       },
-  //     });
-
-  //     this.submitted.set(true);
-  //   };
-
   submitForm = () => {
     const fname = this.firstName().trim();
     const lname = this.lastName().trim();

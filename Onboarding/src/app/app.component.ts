@@ -1,20 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomepageHeroComponent } from "./components/homepage-hero/homepage-hero.component";
-import { HomepageDifferentComponent } from "./components/homepage-different/homepage-different.component";
-import { LetsTalkComponent } from "./components/lets-talk/lets-talk.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { HomepageComponent } from "./routes/homepage/homepage.component";
+import { TalentSeekersComponent } from './routes/talent-seekers/talent-seekers.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  imports: [NavbarComponent, HomepageHeroComponent, HomepageDifferentComponent, LetsTalkComponent, FooterComponent],
+  imports: [NavbarComponent, HomepageComponent, FooterComponent, HomepageComponent, TalentSeekersComponent],
 })
 export class AppComponent {
-  name = signal('Troy');
-
-  getName() {
-    return this.name();
-  }
+  
 }

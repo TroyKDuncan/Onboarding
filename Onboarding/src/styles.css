@@ -2,10 +2,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roboto: "Roboto", sans-serif; 
+  --font-roboto: "Roboto", sans-serif;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .background-different {
   width: 100%;
@@ -22,4 +28,63 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.talent-hero-image {
+  background-image: url("assets/talentSeekersHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.talent-hero-icons {
+  background-image: url("assets/talentSeekersIcons.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graph2-icon {
+  background-image: url("assets/graph_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.star-icon {
+  background-image: url("assets/kid_star.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.compare-arrows-icon {
+  background-image: url("assets/compare_arrows.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rocket-icon {
+  background-image: url("assets/rocket_launch.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.terminal-icon {
+  background-image: url("assets/terminal.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to bottom,
+    #ff94d7,
+    #fff5d9
+  ); /* from indigo to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

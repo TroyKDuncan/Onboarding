@@ -31,14 +31,4 @@
   }
 }
 
-.gradient-text {
-  background: linear-gradient(
-    to bottom,
-    #ff94d7,
-    #fff5d9
-  ); /* from indigo to pink */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* nora */
