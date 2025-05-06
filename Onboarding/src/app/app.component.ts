@@ -11,5 +11,8 @@ import { TalentSeekersComponent } from './routes/talent-seekers/talent-seekers.c
   imports: [NavbarComponent, HomepageComponent, FooterComponent, HomepageComponent, TalentSeekersComponent],
 })
 export class AppComponent {
-  
+  route = signal('home');
+  setRoute(newRoute: string) {
+    this.route.set(newRoute);
+  }
 }
