@@ -79,6 +79,62 @@ body {
   background-repeat: no-repeat;
 }
 
+.article-person-icon {
+  background-image: url("assets/article_person.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.groups-icon {
+  background-image: url("assets/groups.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.recommend-icon {
+  background-image: url("assets/recommend.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.star-rate-icon {
+  background-image: url("assets/star_rate.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.job-hero-icons {
+  background-image: url("assets/jobSeekersIcons.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.job-hero-image {
+  background-image: url("assets/jobSeekersHero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lightbulb {
+  background-image: url("assets/lightbulb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heart-shield {
+  background-image: url("assets/shield_with_heart.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .gradient-text {
   background: linear-gradient(
     to bottom,
