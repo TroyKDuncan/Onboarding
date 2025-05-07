@@ -1,21 +1,33 @@
 <div
-  class="bg-black font-mono text-amber-50 py-24 flex flex-col items-center space-y-8"
+  class="bg-black font-mono text-amber-50 py-24 flex flex-col justify-center items-center space-y-8"
 >
   <app-logo-white-text class="text-4xl"></app-logo-white-text>
-  <div class="lg:flex lg:items-start items-center md:space-y-2 space-x-16">
-    <p class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]">
+  <div
+    class="flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0 lg:items-start items-center"
+  >
+    <a
+      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
+      routerLink="/about-us"
+    >
       About Us
-    </p>
-    <p class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]">
+    </a>
+    <a
+      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
+    >
       Privacy Policy
-    </p>
-    <p class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]">
+    </a>
+    <a
+      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
+      routerLink="/talent-seekers"
+    >
       Talent Seekers
-    </p>
-    <p class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9] lg:mb-0 mb-8"
-    routerLink="/talent-seekers">
+    </a>
+    <a
+      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9] lg:mb-0 mb-8"
+      routerLink="/job-seekers"
+    >
       Job Seekers
-    </p>
+    </a>
     <div class="flex flex-col items-start space-y-2">
       <p class="font-sans text-3xl text-[#FF94D7]">Contact Us</p>
       <p>
