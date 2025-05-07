@@ -2,52 +2,32 @@
   class="bg-black font-mono text-amber-50 py-24 flex flex-col justify-center items-center space-y-8"
 >
   <app-logo-white-text class="text-4xl"></app-logo-white-text>
-  <div
-    class="flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0 lg:items-start items-center"
+
+  <a
+    class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9] transition-colors duration-200"
+    routerLink="/privacy"
   >
-    <a
-      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
-      routerLink="/about-us"
-    >
-      About Us
-    </a>
-    <a
-      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
-    >
-      Privacy Policy
-    </a>
-    <a
-      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9]"
-      routerLink="/talent-seekers"
-    >
-      Talent Seekers
-    </a>
-    <a
-      class="hover:text-[#FF94D7] text-center lg:text-start hover:cursor-pointer active:text-[#fe6ec9] lg:mb-0 mb-8"
-      routerLink="/job-seekers"
-    >
-      Job Seekers
-    </a>
-    <div class="flex flex-col items-start space-y-2">
-      <p class="font-sans text-3xl text-[#FF94D7]">Contact Us</p>
-      <p>
-        Email:
-        <a
-          href="mailto:info@onboarding-llc.com?subject=Inquiry&body=Hello,%0A%0AI'd%20like%20to%20know%20more%20about%20your%20services!"
-          class="hover:text-[#FF94D7] hover:cursor-pointer active:text-[#fe6ec9]"
-          >{{ "info\@onboarding-llc.com" }}</a
-        >
-      </p>
-      <p>
-        Phone:
-        <a
-          href="tel:+16618091946"
-          class="hover:text-[#FF94D7] hover:cursor-pointer active:text-[#fe6ec9]"
-        >
-          (661) 809 - 1946
-        </a>
-      </p>
-    </div>
+    Privacy Policy
+  </a>
+  <div class="flex flex-col items-start space-y-2">
+    <p class="font-sans text-3xl text-[#FF94D7]">Contact Us</p>
+    <p>
+      Email:
+      <a
+        href="mailto:info@onboarding-llc.com?subject=Inquiry&body=Hello,%0A%0AI'd%20like%20to%20know%20more%20about%20your%20services!"
+        class="hover:text-[#FF94D7] hover:cursor-pointer active:text-[#fe6ec9] transition-colors duration-200"
+        >{{ "info\@onboarding-llc.com" }}</a
+      >
+    </p>
+    <p>
+      Phone:
+      <a
+        href="tel:+16618091946"
+        class="hover:text-[#FF94D7] hover:cursor-pointer active:text-[#fe6ec9] transition-colors duration-200"
+      >
+        (661) 809 - 1946
+      </a>
+    </p>
   </div>
   <p class="text-xs mt-8">
     Copyright 2025 Onboarding LLC. All rights reserved.

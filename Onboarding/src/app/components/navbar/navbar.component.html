@@ -1,12 +1,12 @@
 <div
-  class="md:px-8 md:py-2 px-3 py-1.5 flex justify-between items-center bg-black text-amber-50 fixed top-0 z-50 border-b border-b-[#232323] w-screen"
+  class="md:px-8 md:py-2 px-3 py-1.5 flex justify-between items-center bg-black text-amber-50 border-b border-b-[#232323] w-screen"
 >
   <app-logo-white-text class="lg:text-2xl" routerLink="/"></app-logo-white-text>
   <div
     class="hidden md:flex items-center md:space-x-8 space-x-4 font-sans lg:text-lg text-sm pr-2"
   >
     <a
-      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9]"
+      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9] transition-colors duration-200"
       routerLink=""
       routerLinkActive="text-[#FF94D7]"
       [routerLinkActiveOptions]="{ exact: true }"
@@ -14,28 +14,28 @@
       Home
     </a>
     <a
-      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9]"
+      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9] transition-colors duration-200"
       routerLink="/talent-seekers"
       routerLinkActive="text-[#FF94D7]"
     >
       Talent Seekers
     </a>
     <a
-      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9]"
+      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9] transition-colors duration-200"
       routerLink="/job-seekers"
       routerLinkActive="text-[#FF94D7]"
     >
       Job Seekers
     </a>
     <a
-      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9]"
+      class="hover:text-[#FF94D7] hover:cursor-pointer py-0.5 active:text-[#fe6ec9] transition-colors duration-200"
       routerLink="/about-us"
       routerLinkActive="text-[#FF94D7]"
     >
       About
     </a>
     <button
-      class="bg-[#FF94D7] text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex items-center space-x-2"
+      class="bg-[#FF94D7] text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex items-center space-x-2 transition-colors duration-200"
       routerLink="/form"
     >
       <mat-icon>call</mat-icon>
@@ -43,7 +43,7 @@
     </button>
   </div>
   <button
-    class="bg-[#FF94D7] font-sans text-sm text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex md:hidden items-center space-x-2"
+    class="bg-[#FF94D7] font-sans text-sm text-black rounded-full px-4 py-2 hover:bg-[#fe6ec9] hover:cursor-pointer flex md:hidden items-center space-x-2 transition-colors duration-200"
   >
     <mat-icon>call</mat-icon>
     <p>FREE CONSULTATION</p>
