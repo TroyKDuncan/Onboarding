@@ -2,7 +2,7 @@
   class="bg-white text-black font-sans md:px-16 px-2 md:py-12 py-4 rounded-3xl shadow-lg shadow-gray-500 justify-center flex flex-col items-center space-y-4"
   *ngIf="!submitted()"
 >
-  <p class="pb-3 text-3xl font-light">Contact Form</p>
+  <p class="pb-3 md:text-3xl text-xl font-light">Contact Form</p>
   <input
     (keyup)="firstNameChange($event)"
     [value]="firstName()"
