@@ -37,13 +37,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.talent-hero-icons {
-  background-image: url("assets/talentSeekersIcons.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .graph2-icon {
   background-image: url("assets/graph_2.png");
   background-size: cover;
@@ -135,8 +128,57 @@ body {
   background-repeat: no-repeat;
 }
 
+.angular-icon {
+  background-image: url("assets/angular.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c-icon {
+  background-image: url("assets/c.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.git-icon {
+  background-image: url("assets/git.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.javascript-icon {
+  background-image: url("assets/javascript.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.python-icon {
+  background-image: url("assets/python.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swift-icon {
+  background-image: url("assets/swift.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.typescript-icon {
+  background-image: url("assets/typescript.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .gradient-text {
-  background: linear-gradient(
+  background: linear-gradient( 
     to bottom,
     #ff94d7,
     #fff5d9
